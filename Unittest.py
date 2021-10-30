@@ -18,9 +18,9 @@ class TestCaseRun(unittest.TestCase):
         keyword=input()
         api = authentication(consumer_key, consumer_secret, access_token, access_token_secret)
         search_result = tweepy.Cursor(api.search_30_day,
-                                      label='project', query=keyword).items(10)           #Change label to test search function
+                                      label='project', query=keyword).items(10)          #The correct environment in twitter API
         search_result_new = tweepy.Cursor(api.search_30_day,
-                                      label='search', query=keyword).items(10)            #The correct environment in twitter API
+                                      label='search', query=keyword).items(10)           #Change label to test search function
         if search_result == search_result_new:
             print("Passed")
         else:
