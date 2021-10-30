@@ -1,12 +1,12 @@
 import tweepy
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"C:\Users\12691\Desktop\services.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=r"The path of json file"
 from google.cloud import language
 
-consumer_key = "H1twF5WRZHGoFGM2XaeQAHnvp"
-consumer_secret = "mFn5Kx1eHUbKjmcNxkL3ygCvGSUe310oNjmvlPhm3EzHE8Ol3C"
-access_token = "1442149855195852808-6J92gIbJY72UvceHuqCTx6YriPqQ5H"
-access_token_secret = "l1sFRIPsmPCnXguH1LtWuhxljNeOq96HzIThjOfoSAabA"
+consumer_key = "XXXXXXXXXXXXXXXXX"
+consumer_secret = "XXXXXXXXXXXXXXXXXXXX"
+access_token = "XXXXXXXXXXXXXXXXXXXX"
+access_token_secret = "XXXXXXXXXXXXXXXXXXXXX"
 
 def authentication(consumer_key, consumer_secret, access_token, access_token_secret):
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
